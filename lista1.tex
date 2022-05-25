@@ -1,0 +1,109 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[portuguese]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\DeclareMathSizes{12}{30}{16}{12}
+
+\title{\textbf{Lista 1 - MAC0425 Inteligência Artificial}}
+\author{Daniel Angelo Esteves Lawand 10297693}
+
+\begin{document}
+\maketitle
+\onehalfspacing
+\section*{Exercício 1}
+
+Um agente inteligente é aquele que percebe e age em um ambiente. Dito isso, podemos dividir o processo da tomada de decisão do agente inteligente em duas partes: perceber (pensar) o ambiente e agir no ambiente. Assim como, um agente inteligente pode ser racional ou ser humano.\\
+\\
+Na dimensão de agentes inteligentes que pensam como humanos, o foco não está se a solução do problema está correta, mas sim se os passos de execução do problema eram similares aos passos de raciocínio humano.\\
+\\
+Na dimensão de agentes que agem como humanos, o foco está na construção de um agente que responde ao ambiente de maneira semelhante aos humanos.\\
+\\
+Na dimensão de agentes que pensam racionalmente, o foco está na construção de agentes que façam o uso de lógica (argumentos bem estruturados que produzem conclusões corretas quando dadas uma premissas corretas), ou façam o uso de probabilidade quando a informação é incerta.\\
+\\
+E na dimensão de agentes que agem racionalmente, o foco está em perceber o ambiente e executar ações para atingir o melhor resultado ou, quando houver incerteza, o melhor resultado esperado.\\
+\\
+Sabendo o conjunto de percepções P, o conjunto de ações A, conjunto de estados do ambiente, o programa do agente é f: P -> A, e que a função desempenho é g: S*xA* -> [-inf, inf]. Sabemos que um agente é inteligente se f otimiza g, caso contrário não é.
+
+\section*{Exercício 2}
+Definição I - pensar racional\\
+\\
+Definição II - pensar humano\\
+\\
+Definição III - agir humano\\
+
+\section*{Exercício 3}
+- Dificuldade em listar todas possíveis ações dado uma percepção\\
+- Dificuldade em listar todas as possíveis percepções\\
+- Dificuldade em armazenar todas as possbilidades (anteriormente comentadas)\\
+- Em um ambiente não determinístico, há a dificuldade de tomar uma decisão, portanto haveria uma probabilidade atrelada a cada possível decisão.\\
+- Dificuldade no cálculo da probabilidade para possível decisão em um ambiente não determinístico.\\
+- Dificuldade de considerar a consequência futura das ações do agente.\\
+
+\section*{Exercício 4}
+
+Parte I\\
+1\\
+2\\
+3\\
+4\\
+5\\
+6\\
+
+Parte II\\
+1\\
+2\\
+4\\
+8\\
+...\\
+
+Não é possível encontrá-lo, já que a sub-árvore enraizada no nó 8 é de profundidade infinita.\\
+
+
+Parte III\\
+1\\
+1\\
+2\\
+3\\
+1\\
+2\\
+4\\
+5\\
+3\\
+6\\
+
+\section*{Exercício 5}
+\subsection{A}
+
+S = {
+    {{MMMCCC}, },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    }
+
+
+<S, A, T, g, M, s_0>
+
+No caso do exercício:
+          Margem 1   Margem 2
+s_0 = [MMMCCC,   VAZIO]
+M  = [VAZIO,       MMMCCC]
+
+       Quem pode ir para o barco
+A = [C, M, CM, CC, MM]
+\end{document}
